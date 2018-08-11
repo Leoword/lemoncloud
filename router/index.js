@@ -5,12 +5,12 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import head from '../component/header.vue';
+import MainPage from '../component/index.vue';
 
 const routes = [
     {
         path: '/',
-        component: head
+        component: MainPage
     }
 ];
 

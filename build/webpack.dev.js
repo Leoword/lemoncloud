@@ -7,7 +7,7 @@ const application = require('./webpack.base');
 application.mode = 'development';
 application.devtool = 'inline-source-map';
 application.devServer = {
-	port: 8000,
+	port: 8300,
 	host: '0.0.0.0',
     hot: true,
 	proxy: {
