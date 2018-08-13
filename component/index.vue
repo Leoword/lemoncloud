@@ -26,7 +26,7 @@
 import axios from 'axios';
 
 const EURAKE_BASE = 'http://39.107.110.199:18761';
-const RABBITMQ_BASE = ''
+const RABBITMQ_BASE = 'http://39.107.110.199:15672/#'
 
 const tabs = [{
     name: '服务监控',
@@ -41,7 +41,7 @@ const tabs = [{
     name: '消息队列管理',
     subItem: [{
         name: '全部信息概览',
-        src: `${RABBITMQ_BASE}`
+        src: `${RABBITMQ_BASE}/`
     }, {
         name: '连接信息概览',
         src: `${RABBITMQ_BASE}/connections`
@@ -54,6 +54,9 @@ const tabs = [{
     }, {
         name: '队列概览',
         src: `${RABBITMQ_BASE}/queues`
+    }, {
+        name: '管理',
+        src: `${RABBITMQ_BASE}/users`
     }]
 }];
 
